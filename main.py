@@ -8,7 +8,10 @@ def main():
     element = find_element_by_symbol(symbol)
     if element:
         find = {  # Properties to find and print
-            "Atomic number": "number"  # [To print]:[Property in the .json]
+                "Name":"name",  # [To print]:[Property in the .json]
+                "Atomic number": "number",
+                "Period": "period",
+                "Category": "category"
         }
         for attribute in find:
             print(attribute + ": " +
