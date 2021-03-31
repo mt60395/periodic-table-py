@@ -11,6 +11,7 @@ def main():
         find = {  # Properties to find and print
                 "Name":"name",  # [To print]:[Property in the .json]
                 "Atomic number": "number",
+                "Atomic mass": "atomic_mass",
                 "Period": "period",
                 "Category": "category"
         }
