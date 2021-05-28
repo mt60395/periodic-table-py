@@ -16,8 +16,10 @@ def main():
                 "Category": "category"
         }
         for attribute in find:
-            print(attribute + ": " +
-                  str(get_element_property(element, find[attribute])))
+            prop = get_element_property(element, find[attribute])
+            if attribute == "Atomic mass":
+                prop = round(prop, 3)
+            print(attribute + ": " + str(prop))
     else:
         print("Element does not exist.")
 
